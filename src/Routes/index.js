@@ -8,6 +8,8 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Home from '../pages/Home';
 import Feeds from '../pages/Feeds';
+import Signup from '../pages/Authentication/Signup';
+import Login from '../pages/Authentication/Login';
 
 // import CreatePost from '../components/CreatePost'
 // import NotFound from '../pages/NotFound';
@@ -18,6 +20,8 @@ const Routes = () => (
     <Switch>
       <Route exact={true} path="/" component={Home} />
       <Route exact path="/feeds" component={Feeds} />
+      <Route exact path="/signup" component={Signup} />
+      <Route exact path="/login" component={Login} />
     </Switch>
   </BrowserRouter>
 );

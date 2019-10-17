@@ -10,8 +10,8 @@ const Home = () => {
   return (
     <div>
       <section>
-        <div className="container is-fluid">
-          <h1 className="h3 pt-40 pb-40 home-title">10th June 2019</h1>
+        <div className="container">
+          <h1 className="h4 pt-40 pb-40 home-title">10th June 2019</h1>
           <div className="columns">
             <div className="col-3">
               <div className="appcard">
@@ -19,7 +19,7 @@ const Home = () => {
                   <img src={ask} alt="ask question" />
                 </div>
                 <div className="appcard-content">
-                  <h1 className="h5">Ask Questions</h1>
+                  <h1 className="h6">Ask Questions</h1>
                 </div>
               </div>
             </div>
@@ -29,7 +29,7 @@ const Home = () => {
                   <img src={people} alt="people" />
                 </div>
                 <div className="appcard-content">
-                  <h1 className="h5">Share your opinion</h1>
+                  <h1 className="h6">Share your opinion</h1>
                 </div>
               </div>
             </div>
@@ -39,7 +39,7 @@ const Home = () => {
                   <img src={experience} alt="experience" />
                 </div>
                 <div className="appcard-content">
-                  <h1 className="h5">Share your experience</h1>
+                  <h1 className="h6">Share your experience</h1>
                 </div>
               </div>
             </div>
@@ -49,13 +49,13 @@ const Home = () => {
                   <img src={feelings} alt="feelings" />
                 </div>
                 <div className="appcard-content">
-                  <h1 className="h5">Share your feelings</h1>
+                  <h1 className="h6">Share your feelings</h1>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="container is-fluid">
+        <div className="container">
           <h1 className="h4 pt-40 pb-40 home-title">Most discussed topics</h1>
           <div className="columns">
             <div className="col-3">
@@ -65,7 +65,7 @@ const Home = () => {
                 </div>
                 <div className="overlay">
                   <div className="overlaycard-content">
-                    <h1 className="h4">Politics</h1>
+                    <h1 className="h6">Politics</h1>
                     <div className="overlaycard-span">55 Posts</div>
                   </div>
                 </div>
@@ -74,23 +74,11 @@ const Home = () => {
             <div className="col-3">
               <div className="overlaycard">
                 <div className="overlaycard-image">
-                  {/* <img src="./assets/images/apple-desk-internet-209151.jpg"> */}
+                  <img src={worship} alt="worship" />
                 </div>
                 <div className="overlay"></div>
                 <div className="overlaycard-content">
-                  <h1 className="h4">Science & Technology</h1>
-                  <div className="overlaycard-span">21 Posts</div>
-                </div>
-              </div>
-            </div>
-            <div className="col-3">
-              <div className="overlaycard">
-                <div className="overlaycard-image">
-                  {/* <img src="./assets/images/liverpool.jpg"> */}
-                </div>
-                <div className="overlay"></div>
-                <div className="overlaycard-content">
-                  <h1 className="h4">Sports</h1>
+                  <h1 className="h6">Science & Technology</h1>
                   <div className="overlaycard-span">21 Posts</div>
                 </div>
               </div>
@@ -102,7 +90,19 @@ const Home = () => {
                 </div>
                 <div className="overlay"></div>
                 <div className="overlaycard-content">
-                  <h1 className="h4">Religion</h1>
+                  <h1 className="h6">Sports</h1>
+                  <div className="overlaycard-span">21 Posts</div>
+                </div>
+              </div>
+            </div>
+            <div className="col-3">
+              <div className="overlaycard">
+                <div className="overlaycard-image">
+                  <img src={worship} alt="worship" />
+                </div>
+                <div className="overlay"></div>
+                <div className="overlaycard-content">
+                  <h1 className="h6">Religion</h1>
                   <div className="overlaycard-span">21 Posts</div>
                 </div>
               </div>
@@ -110,7 +110,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <div className="footer">
+      {/* <div className="footer">
         <div className="container is-fluid">
           <div className="columns">
             <div className="col-4">
@@ -122,7 +122,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

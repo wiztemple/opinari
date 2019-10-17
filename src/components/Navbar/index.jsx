@@ -81,7 +81,7 @@ const Navbar = () => {
   return (
     <div className="header">
       <nav className="navbar fixed-top" role="navigation" aria-label="main navigation">
-        <div className="container is-fluid">
+        <div className="container">
           <div className="brand">
             <Link to="/" className="navbar-item">
               <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -92,28 +92,28 @@ const Navbar = () => {
 
             <span className="brand-name">OPINARI</span>
             </Link>
-            <a className="navbar-burger" role="button" aria-label="menu" aria-expanded="false">
+            <Link to="/" className="navbar-burger" role="button" aria-label="menu" aria-expanded="false">
               <span>&#8801;</span>
-            </a>
+            </Link>
           </div>
           <div className="nav-menu">
             <div className="navbar-left">
               <Link to="/feeds" className="navbar-item">FEEDS</Link>
               <div className="navbar-btn">
-                <button className="button button-black button-shadow ripple"
+                <button className="button button-inset button-rounded ripple"
                   onClick={() => toggleModalView()}
                 >
-                  &#9997; Create Post
+                  &#9997; What's your opinion
                 </button>
               </div>
             </div>
             <div className="navbar-right">
-              <a className="navbar-item authLink" href="#">
+              <Link to="/signup" className="navbar-item">
                 SIGN UP
-              </a>
-              <a className="navbar-item authLink" href="#">
+              </Link>
+              <Link to="/login" className="navbar-item">
                 SIGN IN
-              </a>
+              </Link>
             </div>
           </div>
         </div>
